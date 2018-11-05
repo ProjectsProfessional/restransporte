@@ -13,10 +13,6 @@
 	   </ul>
         <div class="row">
             <div class="col-6 mb-3">
-                <label for="code">Código</label>
-                <input type="text" class="form-control" id="code" name="code" required>
-            </div>
-            <div class="col-6 mb-3">
                 <label for="description">Descripción Marca</label>
                 <input type="text" class="form-control" id="description" name="description" required>
             </div>
