@@ -15,25 +15,25 @@
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="nombre1">1er Nombre</label>
-      <input type="text" class="form-control" name="nombre1" id="nombre1" placeholder="primer nombre" value="Ingrese Nombre"" required>
+      <input type="text" class="form-control" name="nombre1" id="nombre1" placeholder="primer nombre" required>
     </div>
     <div class="col-md-4 mb-3">
       <label for="nombre2">2do Nombre</label>
-      <input type="text" class="form-control" name="nombre2" id="nombre2" placeholder="segundo nombre" value="Ingres Nombre" required>
+      <input type="text" class="form-control" name="nombre2" id="nombre2" placeholder="segundo nombre" required>
     </div>
     <div class="col-md-4 mb-3">
       <label for="nombre3">3er Nombre</label>
-      <input type="text" class="form-control" name="nombre3" id="nombre3" placeholder="segundo nombre" value="Ingrese Nombre" required>
+      <input type="text" class="form-control" name="nombre3" id="nombre3" placeholder="segundo nombre" required>
     </div>
   </div>
  <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="apellido1">1er Apellido</label>
-      <input type="text" class="form-control" name="apellido1" id="apellido1" placeholder="primer nombre" value="Ingrese Apellido" required>
+      <input type="text" class="form-control" name="apellido1" id="apellido1" placeholder="primer nombre" required>
     </div>
     <div class="col-md-4 mb-3">
       <label for="apellido2">2do Apellido</label>
-      <input type="text" class="form-control" name="apellido2" id="apellido2" placeholder="segundo nombre" value="Ingrese Apellido" required>
+      <input type="text" class="form-control" name="apellido2" id="apellido2" placeholder="segundo nombre" required>
     </div>
 </div> 
 <div class="form-row">

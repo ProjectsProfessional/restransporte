@@ -43,33 +43,33 @@
 
                 </div>
                     <div class="form-group">
-                                    <label for="modelo">Modelo</label>
-                                    <select class="form-control" name="modelo" id="modelo">
-                                      <option>2018</option>
-                                      <option>2017</option>
-                                      <option>2016</option>
-                                      <option>2015</option>
-                                      <option>2014</option>
-                                    </select>
-                            </div>
+                          <label for="modelo">Modelo</label>
+                      <select class="form-control" name="modelo" id="modelo">
+                          <option>2018</option>
+                          <option>2017</option>
+                          <option>2016</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                      </select>
+                    </div>
 
                         <div class="form-group">
-                                    <label for="pasajeros">pasajeros</label>
-                                    <select class="form-control" name="pasajeros" id="pasajeros">
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                      <option>6</option>
-                                      <option>7</option>
-                                      <option>8</option>
-                                      <option>9</option>
-                                      <option>10</option>
-                                      <option>11</option>
-                                      <option>12</option>
-                                      <option>13</option>
-                                    </select>
+                            <label for="pasajeros">pasajeros</label>
+                          <select class="form-control" name="pasajeros" id="pasajeros">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                          </select>
                         </div>
                  </div>
             

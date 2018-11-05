@@ -15,13 +15,20 @@ class PilotoController extends Controller
 
     public function index()
     {
-
+        $pilotos = Piloto::all();
+        $title = 'Listado de Pilotos';
+        return view('Piloto.index',compact('pilotos','title'));
     }
 
     public function create()
     {
     	$title = 'Definir Piloto';
     	return view('Piloto.create',compact('title'));
+    }
+
+    public function details(Piloto $piloto){
+       // dd($currency);
+        return view('Piloto.details',compact('piloto'));
     }
 
     public function store(request $request)
@@ -51,6 +58,24 @@ class PilotoController extends Controller
 
     	]);
     	return redirect()->route('piloto');
+    }
+
+    public function update(Piloto $piloto)
+    {
+        $data = request()->all();
+
+        $piloto->update([
+            'NOMBRE1' =>$data['nombre1'],
+            'NOMBRE2' =>$data['nombre2'],
+            'NOMBRE3' =>$data['nombre3'],
+            'APELLIDO1' =>$data['apellido1'],
+            'APELLIDO2' =>$data['apellido2'],
+            'LICENCIA' =>$data['licencia'],
+            'FECHA_CONTRATACION' =>$data['contratacion'],
+            'FECHA_RETIRO' =>$data['baja'],
+            
+        ]);
+        return redirect()->route('piloto');
     }
 
     public function destroy()

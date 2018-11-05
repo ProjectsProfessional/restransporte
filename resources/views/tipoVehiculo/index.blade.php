@@ -30,7 +30,7 @@
 	            </tr>
             </thead>
             <tbody>
-            @forelse($Marcas as $marca)
+            @forelse($marcas as $marca)
                 <tr>
                     <td> {{$marca->ID_MARCA}}</td>
                     <td> {{$marca->DESCRIPCION}}</td>
