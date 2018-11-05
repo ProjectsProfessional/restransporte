@@ -22,7 +22,7 @@ class MarcaController extends Controller
     public function store(request $request)
     {
     	$this->validate($request,[
-    		'description' =>'required',
+    		'description' =>'required|max:24',
     	]);
 
     	$data = request()->all();

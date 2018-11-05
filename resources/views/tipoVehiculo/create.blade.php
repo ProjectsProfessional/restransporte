@@ -4,7 +4,7 @@
     <link href="{{asset("css/form-validation.css")}}" rel="stylesheet">
 @endsection
 @section('content')
-   <form class="needs-validation" method="POST" action="{{url('/currencies')}}">
+   <form class="needs-validation" method="POST" action="{{url('/tvehiculo')}}">
         {{csrf_field()}}
 	   <ul>
 	   	@foreach($errors->all() as $error)
@@ -12,10 +12,6 @@
 		@endforeach
 	   </ul>
         <div class="row">
-            <div class="col-6 mb-3">
-                <label for="code">Código</label>
-                <input type="text" class="form-control" id="code" name="code" required>
-            </div>
             <div class="col-6 mb-3">
                 <label for="description">Descripción</label>
                 <input type="text" class="form-control" id="description" name="description" required>

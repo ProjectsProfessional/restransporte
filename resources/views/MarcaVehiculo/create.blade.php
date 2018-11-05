@@ -4,7 +4,7 @@
     <link href="{{asset("css/form-validation.css")}}" rel="stylesheet">
 @endsection
 @section('content')
-   <form class="needs-validation" method="POST" action="{{url('/currencies')}}">
+   <form class="needs-validation" method="POST" action="{{url('/marca')}}">
         {{csrf_field()}}
 	   <ul>
 	   	@foreach($errors->all() as $error)
