@@ -1,4 +1,5 @@
 @extends('dash')
+@section('title',$title)
 @section('css-template')
     @parent
     <link href="{{asset("css/form-validation.css")}}" rel="stylesheet">
@@ -12,32 +13,24 @@
         @endforeach
        </ul>
     <div>
-        <div class="row">
-                 <div class ="col-6 mb-3">
-                        <label label for="code">Código</label>
-                        <input type="text" class="form-control" id="code" name="code" required>
-                </div>
-                 
-                
-                  
+        <div class="row">              
                         <div class="form-group">
-                                <label for="exampleFormControlSelect1">Marca</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                  <option>Honda</option>
-                                  <option>Kia</option>
-                                  <option>Toyota</option>
-                                  <option>Hyundai</option>
-                                  <option>Ford</option>
+                                <label for="marca">Escoja Marca</label>
+                                <select class="form-control" name="marca" id="marca" required>
+                                  <option>--- Seleccione ---</option>
+                                  @foreach($marcas as $marca)
+                                   <option value="{{$marca['ID_MARCA'] }}">{{$marca['DESCRIPCION'] }}</option>
+                                  @endforeach
                                 </select>
                         </div>
 
                     <div class="form-group">
-                                <label for="exampleFormControlSelect1">Tipo Vehiculo</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                  <option>Sedan</option>
-                                  <option>Suv</option>
-                                  <option>Coster</option>
-                                  <option>MicroBus</option>
+                                <label for="tipo">Tipo Vehiculo</label>
+                                <select class="form-control" name="tipo" id="tipo" required>
+                                  <option>--- Seleccione ---</option>
+                                  @foreach($tipotransportes as $tipo)
+                                  <option value="{{$tipo['ID_TIPO_TRANSPORTE'] }}">{{$tipo['DESCRIPCION'] }}</option>
+                                  @endforeach
                                 </select>
                     </div>
 
@@ -45,13 +38,13 @@
       <div>
             <div class="row">
                 <div class="col-6 mb-3">
-                    <label for="description">Descripción</label>
-                    <input type="text" class="form-control" id="description" name="description" required>
+                    <label for="placa">Placa</label>
+                    <input type="text" class="form-control" id="placa" name="placa" required>
 
                 </div>
                     <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Modelo</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <label for="modelo">Modelo</label>
+                                    <select class="form-control" name="modelo" id="modelo">
                                       <option>2018</option>
                                       <option>2017</option>
                                       <option>2016</option>
@@ -61,8 +54,8 @@
                             </div>
 
                         <div class="form-group">
-                                    <label for="exampleFormControlSelect1">pasajeros</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <label for="pasajeros">pasajeros</label>
+                                    <select class="form-control" name="pasajeros" id="pasajeros">
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -82,16 +75,7 @@
             
         </div>   
          <div>
-            <div class="row">
-           
-                
-                    <div class="col-6 mb-3">
-                        <label for="description">Placa</label>
-                        <input type="text" class="form-control" id="description" name="description" required>
-
-                    </div>
-                   
-                    <div class="row">
+                     <div class="row">
                             <div class="col-6"></div>
                                 <div class="col-12">
                                     <button class="btn btn-sm btn-outline-secondary">
@@ -100,8 +84,6 @@
                                     </button>
                                 </div>
                            </div>
-                                
-                    </div>
                
             </div> 
         </div>    

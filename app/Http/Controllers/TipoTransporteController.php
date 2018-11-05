@@ -15,7 +15,7 @@ class TipoTransporteController extends Controller
 
     public function create()
     {
-    	$title = 'Definir Tipo Tipo Transporte';
+    	$title = 'Definir Tipo Transporte';
     	return view('tipoVehiculo.create',compact('title'));
     }
 
@@ -29,7 +29,7 @@ class TipoTransporteController extends Controller
 
     	TipoTransporte::create([
     		'DESCRIPCION' =>$data['description'],
-    	])
+    	]);
     	return redirect()->route('tvehiculo');
     }
 
