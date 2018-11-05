@@ -13,10 +13,22 @@ class TipoTransporteController extends Controller
 
     }
 
+    public function index()
+    {
+        $tipos = TipoTransporte::all();
+        $title = 'Tipos de Transportes';
+        return view('tipoVehiculo.index',compact('tipos','title'));
+    }
+
     public function create()
     {
     	$title = 'Definir Tipo Transporte';
     	return view('tipoVehiculo.create',compact('title'));
+    }
+
+    public function details(TipoTransporte $tipo){
+       // dd($currency);
+        return view('tipoVehiculo.details',compact('tipo'));
     }
 
     public function store(request $request)
@@ -31,6 +43,16 @@ class TipoTransporteController extends Controller
     		'DESCRIPCION' =>$data['description'],
     	]);
     	return redirect()->route('tvehiculo');
+    }
+
+    public function update(tipoVehiculo $tipo)
+    {
+        $data = request()->all();
+
+        $tipo->update([
+            'DESCRIPCION' => $data['description'],
+        ])
+        return redirect()->route('tvehiculo');
     }
 
 }
