@@ -4,14 +4,20 @@
     <link href="{{asset("css/form-validation.css")}}" rel="stylesheet">
 @endsection
 @section('content')
+<<<<<<< HEAD
    <form class="needs-validation" method="POST" action="{{url('/currencies')}}">
         
 	  
+=======
+   <form class="needs-validation" method="POST" action="{{url('/marca')}}">
+        {{csrf_field()}}
+	   <ul>
+	   	@foreach($errors->all() as $error)
+			<li>{{$error}}</li>
+		@endforeach
+	   </ul>
+>>>>>>> 3705c3a0eddc2039a8f936e623ffe03328265754
         <div class="row">
-            <div class="col-6 mb-3">
-                <label for="code">Código</label>
-                <input type="text" class="form-control" id="code" name="code" required>
-            </div>
             <div class="col-6 mb-3">
                 <label for="description">Descripción Marca</label>
                 <input type="text" class="form-control" id="description" name="description" required>
