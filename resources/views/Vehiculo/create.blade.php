@@ -1,16 +1,13 @@
 @extends('dash')
-@section('css-template')
-    @parent
-    <link href="{{asset("css/form-validation.css")}}" rel="stylesheet">
-@endsection
+
+
 @section('content')
-   <form class="needs-validation" method="POST" action="{{url('/currencies')}}">
-        {{csrf_field()}}
-       <ul>
-        @foreach($errors->all() as $error)
-            <li>{{$error}}</li>
-        @endforeach
-       </ul>
+    
+   <div>
+
+    <div> <h3>INGRESE UN VEHICULO NUEVO</h3></div>
+    </div>
+       
     <div>
         <div class="row">
                  <div class ="col-6 mb-3">
@@ -61,7 +58,7 @@
                             </div>
 
                         <div class="form-group">
-                                    <label for="exampleFormControlSelect1">pasajeros</label>
+                                    <label for="exampleFormControlSelect1">Pasajeros</label>
                                     <select class="form-control" id="exampleFormControlSelect1">
                                       <option>1</option>
                                       <option>2</option>
@@ -91,19 +88,28 @@
 
                     </div>
                    
-                    <div class="row">
-                            <div class="col-6"></div>
-                                <div class="col-12">
-                                    <button class="btn btn-sm btn-outline-secondary">
-                                        <span data-feather="save"></span>
-                                        Guardar
-                                    </button>
-                                </div>
-                           </div>
-                                
-                    </div>
+                    
                
             </div> 
+            <div class="row">
+            <div class="col-6"></div>
+            <div class="col-12">
+                <button class="btn btn-outline-success">
+                    <span data-feather="save"></span>
+                    Guardar
+                </button>
+
+             </button><div class="btn-group mr-2">
+                <a class="btn btn-outline-danger" href="{{route('indexvehiculo')}}">
+                <span data-feather="arrow-left-circle"></span>
+                Cancelar
+
+              </a>
+             </div>
+
+        </div>
+            </div>
+        </div>
         </div>    
     </form>
 @endsection

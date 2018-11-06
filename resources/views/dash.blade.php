@@ -18,16 +18,12 @@
 
 <body>
 <nav class="navbar navbar-dark fixed-top bg-success flex-md-nowrap p-0 shadow navbar-expand-lg" >
-    <a class="navbar-brand col-sm-3 col-md-3 mr-0" href="{{route('dash')}}">HOTEL XXXXXXXX</a>
+    <a class="navbar-brand col-sm-3 col-md-3 mr-0" href="{{route('dash')}}">RESERVA TRASPORTE</a>
     <input class="form-control form-control-dark w-100 " type="text" placeholder="Buscar..." aria-label="Search">
     <div class="panel-body">
         <form method="POST" action="">
       
-            <ul class="navbar-nav px-3">
-                <li class="nav-item text-nowrap">
-                    <button class="btn btn-primary btn-block bg-dark" >Desconectar</button>
-                </li>
-            </ul>
+            
         </form>
     </div>
 </nav>
@@ -50,12 +46,7 @@
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2"></h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
-        <div class="btn-group mr-2">
-            <a class="btn btn-sm btn-outline-secondary" href="#">
-                <span data-feather="arrow-left-circle"></span>
-                Cancelar
-            </a>
-        </div>
+        
     </div>
             </div>
             <div class="container-fluid">

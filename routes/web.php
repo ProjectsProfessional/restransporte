@@ -1,15 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
 
 Route::get('/', function () {
     return view('dash');
@@ -46,3 +37,35 @@ Route::get('/Pilotos', function () {
 Route::get('/VehiculosNuevos', function () {
        return view('NuevoVehiculo.create');
 })->name('nvehiculo');
+
+Route::get('/Nueva-Reserva', function () {
+       return view('Reserva.create');
+})->name('nreserva');
+
+Route::get('/Vehiculos-TIPO', function () {
+       return view('tipoVehiculo.index');
+})->name('indextipov');
+
+Route::get('/catalogo-marcas', function () {
+       return view('MarcaVehiculo.index');
+})->name('indexmarca');
+
+Route::get('/catalogo-vehiculo', function () {
+       return view('Vehiculo.index');
+})->name('indexvehiculo');
+
+Route::get('/catalogo-piloto', function () {
+       return view('Piloto.index');
+})->name('indexpiloto');
+
+Route::get('/catalogo-estados', function () {
+       return view('EstadosReserva.index');
+})->name('indexreserva');
+
+Route::get('/catalogo-destinos', function () {
+       return view('Destinos.index');
+})->name('indexdestino');
+
+Route::get('/Nuevo-vehiculo', function () {
+       return view('NuevoVehiculo.index');
+})->name('indexnvehiculo');

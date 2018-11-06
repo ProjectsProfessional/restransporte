@@ -1,24 +1,40 @@
 @extends('dash')
-@section('css-template')
-    @parent
-    <link href="{{asset("css/form-validation.css")}}" rel="stylesheet">
-@endsection
-@section('content')
-    <div>
 
-    <div> <h3>NUEVO ESTADO</h3></div>
+
+@section('content')
+    
+   <div>
+
+    <div> <h3>RESERVE VEHICULO</h3></div>
     </div>
-        <div class="row">
-            <div class="col-6 mb-3">
-                <label for="code">Código</label>
-                <input type="text" class="form-control" id="code" name="code" required>
-            </div>
-            <div class="col-6 mb-3">
+       
+    <form>
+      <div class="form-group">
+      <div class="col-6 mb-3">
                 <label for="description">Descripción Estado</label>
                 <input type="text" class="form-control" id="description" name="description" required>
             </div>
-        </div>
-        <div class="row">
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
             <div class="col-6"></div>
              <div class="col-12">
                 <button class="btn btn-outline-success">
@@ -32,6 +48,5 @@
 
                   </a>
                 </div>
-        </div>
-    </form>
+    
 @endsection

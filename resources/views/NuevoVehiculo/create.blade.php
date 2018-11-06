@@ -15,7 +15,10 @@
     </div>
 @endsection
 @section('content')
-    <form class="needs-validation" action="">
+    <div>
+
+    <div> <h3>NUEVO VEHICULO</h3></div>
+    </div>
         
         <div class="row">
             <div class="col-6 mb-3">
@@ -40,14 +43,20 @@
                 <input type="text" class="form-control" id="description" name="description">
             </div>
         </div>
-        <div class="row">
+       <div class="row">
             <div class="col-6"></div>
-            <div class="col-6">
-                <button class="btn btn-sm btn-outline-secondary">
+             <div class="col-12">
+                <button class="btn btn-outline-success">
                     <span data-feather="save"></span>
                     Guardar
-                </button>
-            </div>
+               </button>
+                <div class="btn-group mr-2">
+                  <a class="btn btn-outline-danger" href="{{route('indexnvehiculo')}}">
+                    <span data-feather="arrow-left-circle"></span>
+                    Cancelar
+
+                  </a>
+                </div>
         </div>
     </form>
 @endsection
